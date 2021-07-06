@@ -5,8 +5,8 @@ const constants = require("../constants/constants.js");
 const rules = {
     "images": function initialize(mode) {
         const filename = mode === constants.environments.production ?
-            "images/[hash][ext][query]" :
-            "images/[name][ext][query]";
+            "images/css/[hash][ext][query]" :
+            "images/css/[name][ext][query]";
 
         const rules = {
             test: /\.(png|jpe?g|gif|svg)$/i,
