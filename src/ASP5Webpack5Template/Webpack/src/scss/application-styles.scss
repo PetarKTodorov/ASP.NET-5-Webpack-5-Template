@@ -1,0 +1,60 @@
+﻿@use 'variables';
+
+/*regular version - 400*/
+@font-face {
+    font-family: "AFont";
+    src: local("AFont"), url("../fonts/monospace/Source_Code_Pro/SourceCodePro-Regular.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    font-family: 'AFont', monospace;
+}
+
+body,
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('../images/css/body_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .body-heading {
+        color: inherit;
+    }
+}
+
+.container {
+    width: 80%;
+    padding: 2rem;
+    border-radius: 4px;
+    background-color: dimgray;
+    color: variables.$color-red;
+    text-align: center;
+
+    .container-1 {
+        margin-top: 1rem;
+
+        img {
+            max-width: 30%;
+            margin: 1rem;
+        }
+    }
+}
