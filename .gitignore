@@ -354,4 +354,4 @@ MigrationBackup/
 
 # Custom ignores
 node_modules
-/src/ASP5Webpack5Template/Webpack/bundle-stats.json
+/src/WebApplication/Webpack/bundle-stats.json
