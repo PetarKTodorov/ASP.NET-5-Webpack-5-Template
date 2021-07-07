@@ -1,4 +1,10 @@
-﻿const user = {
+﻿import 'jquery';
+import 'jquery-validation';
+import 'jquery-validation-unobtrusive';
+
+import 'bootstrap';
+
+const user = {
     "name": "Adam",
     "age": 20,
     "gender": "Male",

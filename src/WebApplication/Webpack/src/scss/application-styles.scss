@@ -1,5 +1,10 @@
 ﻿@use 'variables';
 
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import './site.css';
+
+// Custom css
+
 /*regular version - 400*/
 @font-face {
     font-family: "AFont";
@@ -15,46 +20,44 @@
     box-sizing: border-box;
 }
 
-html, 
+html,
 body {
     font-family: 'AFont', monospace;
+
+    h1 {
+        color: variables.$color-red;
+    }
 }
 
-body,
-main {
+.test-page {
+    width: 100%;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 70%;
+
+        padding: 2rem;
+
+        background-color: gray;
+    }
 }
 
-body {
-    width: 100%;
-    min-height: 100vh;
+.test-image {
+    width: 50%;
+    max-height: 300px;
+}
 
-    background-image: url('../images/css/body_background.jpg');
-    background-size: cover;
+.test-image-css {
+    background-image: url('../images/css/background.jpg');
     background-position: center;
-    background-repeat: no-repeat;
-
-    .body-heading {
-        color: inherit;
-    }
-}
-
-.container {
-    width: 80%;
-    padding: 2rem;
-    border-radius: 4px;
-    background-color: dimgray;
-    color: variables.$color-red;
-    text-align: center;
-
-    .container-1 {
-        margin-top: 1rem;
-
-        img {
-            max-width: 30%;
-            margin: 1rem;
-        }
-    }
+    background-size: cover;
 }

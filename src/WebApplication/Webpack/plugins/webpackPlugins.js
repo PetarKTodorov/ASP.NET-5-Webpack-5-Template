@@ -49,7 +49,7 @@ const plugins = {
     },
     "miniCssExtract": function initialize(mode) {
         const filename = mode === constants.environments.production ?
-            "css/[name].[contenthash].css" :
+            "css/[name].[contenthash].min.css" :
             "css/[name].css";
 
         return new MiniCssExtractPlugin({ filename: filename });

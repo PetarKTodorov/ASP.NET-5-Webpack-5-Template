@@ -33,8 +33,7 @@ const webpackObject = {
 };
 
 if (mode === constants.environments.production) {
-    webpackObject.output.filename = 'js/[name].[contenthash].js';
-
+    webpackObject.output.filename = 'js/[name].[contenthash].min.js';
 } else if (mode === constants.environments.development) {
     webpackObject.output.filename = 'js/[name].js';
 
