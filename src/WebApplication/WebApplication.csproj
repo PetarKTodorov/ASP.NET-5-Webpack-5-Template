@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Webpack\src\fonts\" />
+    <Folder Include="Webpack\src\images\css\" />
+    <Folder Include="Webpack\src\images\html\" />
+  </ItemGroup>
+
 </Project>
